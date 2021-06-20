@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" orientation="VERTICAL" style="-fx-background-color: #d3d3d3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="933.0" style="-fx-background-color: #d3d3d3;">
+      <DatePicker fx:id="dateDate" layoutX="14.0" layoutY="8.0" prefWidth="211.0" promptText="Select Your Date........." />
+      <TextField fx:id="tfEvent" layoutX="353.0" layoutY="5.0" prefHeight="31.0" prefWidth="332.0" promptText="Add Event Here........." />
+      <Button fx:id="btnAdd" layoutX="699.0" layoutY="5.0" mnemonicParsing="false" onAction="#addEvent" prefHeight="31.0" prefWidth="109.0" text="Add Event" />
+      <Button fx:id="btnDel" layoutX="817.0" layoutY="5.0" mnemonicParsing="false" onAction="#delEvent" prefHeight="31.0" prefWidth="109.0" text="Delete" />
+      <Separator layoutX="230.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="689.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="689.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="tfHours" layoutX="237.0" layoutY="8.0" prefHeight="26.0" prefWidth="46.0" promptText="Hrs..." />
+      <TextField fx:id="tfMins" layoutX="292.0" layoutY="8.0" prefHeight="26.0" prefWidth="45.0" promptText="Mins.." />
+      <Separator layoutX="343.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="6.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="343.0" AnchorPane.topAnchor="0.0" />
+   </AnchorPane>
+   <ListView fx:id="lvEvent" prefHeight="200.0" prefWidth="200.0" />
+</SplitPane>
